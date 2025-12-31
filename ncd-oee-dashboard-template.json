@@ -1,0 +1,2165 @@
+[
+    {
+        "id": "0fd0a1fc520e9c06",
+        "type": "tab",
+        "label": "OEE dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fdde70091d646017",
+        "type": "group",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Set Path Signals Here",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "stroke": "none",
+            "fill-opacity": "0.6",
+            "label-position": "s"
+        },
+        "nodes": [
+            "2eb4820ec061e3aa",
+            "cae684c1bfb4bf20",
+            "4983c6b88b823135",
+            "549b5e3433be4368"
+        ],
+        "x": 1254,
+        "y": 259,
+        "w": 292,
+        "h": 510
+    },
+    {
+        "id": "fddd1ad6a2794ee4",
+        "type": "group",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Set Device Address Here",
+        "style": {
+            "stroke": "none",
+            "fill": "#d1d1d1",
+            "fill-opacity": "0.56",
+            "label": true,
+            "label-position": "s"
+        },
+        "nodes": [
+            "cc82c855c4f6d853",
+            "7e9a3dfbc9cb24fd",
+            "b3e09912c8798e98"
+        ],
+        "x": 634,
+        "y": 399,
+        "w": 292,
+        "h": 370
+    },
+    {
+        "id": "b3f32a55d0732240",
+        "type": "ui-gauge",
+        "z": "0fd0a1fc520e9c06",
+        "name": "OEE",
+        "group": "f2728a391265744b",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "OEE",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca0202",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "30",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 2510,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3e5e4a8a006cb4e",
+        "type": "ui-gauge",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Performance",
+        "group": "bf5401c82d42a5ab",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "PERFORMANCE",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca0202",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "30",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 2490,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b92d05acd6af0a81",
+        "type": "ui-gauge",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Availability",
+        "group": "e66cf767338f92c3",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "AVAILABILITY",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca0202",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "30",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 2490,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "420cefd10c1ad9fa",
+        "type": "ui-gauge",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Quality",
+        "group": "bb7991b86627822f",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "QUALITY",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca0202",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "30",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 2500,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48f2d5b3e40cb944",
+        "type": "ui-chart",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "name": "Parts Produced/Rejected by Shift",
+        "label": "Parts Produced/Rejected by Shift",
+        "order": 7,
+        "chartType": "bar",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Produced Units",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": "",
+        "action": "append",
+        "stackSeries": true,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#2ca02c",
+            "#d62728",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "5",
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 2420,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "180421fbe1800e3a",
+        "type": "ui-chart",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "name": "Uptime/Downtime per Shift",
+        "label": "Uptime/Downtime per Shift",
+        "order": 6,
+        "chartType": "bar",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Uptime (Minutes)",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": "",
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#2ca028",
+            "#ffc800",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "5",
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 2440,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c674e62e11778e8",
+        "type": "ui-progress",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "name": "",
+        "label": "Rejected Percentage",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "color": "",
+        "className": "",
+        "x": 2460,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5928ed951a57b084",
+        "type": "ui-gauge",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Live Machine Status",
+        "group": "74b445a08cecbe9a",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "3",
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Live Machine Status",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000",
+                "text": "Machine Status: Stopped",
+                "textType": "str"
+            },
+            {
+                "from": "1",
+                "color": "#5cd65c",
+                "text": "Machine Status: Running",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "1",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 2460,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8375df8a0a257122",
+        "type": "ui-text",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "name": "Total Produced by Shift",
+        "label": "Total Produced: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload&' /'&planned&' units'",
+        "valueType": "jsonata",
+        "x": 2450,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "daeeba6db02c4d3c",
+        "type": "ui-text",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "name": "Total Rejected by Shift",
+        "label": "Total Rejected:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload&' units'",
+        "valueType": "jsonata",
+        "x": 2460,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "58f6138bc74b72cc",
+        "type": "ui-number-input",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "name": "",
+        "label": "Planned Production Time (Hours)",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "10000",
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": true,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 900,
+        "y": 1060,
+        "wires": [
+            [
+                "fd600309367c5176"
+            ]
+        ]
+    },
+    {
+        "id": "c09bc55d9e1367eb",
+        "type": "ui-progress",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "name": "",
+        "label": "Uptime Percent",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "color": "",
+        "className": "",
+        "x": 2480,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d0ccc8eec3037192",
+        "type": "ui-text",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "name": "Total Uptime",
+        "label": "Total Uptime: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 2490,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4a1928481b263a2d",
+        "type": "ui-text",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "name": "Total Downtime",
+        "label": "Total Downtime:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 2480,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "db23ce697f694fde",
+        "type": "ui-progress",
+        "z": "0fd0a1fc520e9c06",
+        "group": "114d4f73be244ba3",
+        "name": "",
+        "label": "Downtime Percent",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "color": "",
+        "className": "",
+        "x": 2470,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "16f8a6a21be8a5b1",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Save Actual Produced",
+        "rules": [
+            {
+                "t": "set",
+                "p": "totalProduced",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "planned",
+                "pt": "msg",
+                "to": "goalUnits",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1740,
+        "y": 580,
+        "wires": [
+            [
+                "8375df8a0a257122",
+                "588c355c5eebcb29"
+            ]
+        ]
+    },
+    {
+        "id": "89e02119d78e142d",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Save Actual Rejected",
+        "rules": [
+            {
+                "t": "set",
+                "p": "totalRejected",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1740,
+        "y": 720,
+        "wires": [
+            [
+                "daeeba6db02c4d3c",
+                "8a7f9da66a8fef97",
+                "1d07c5bc862db02f"
+            ]
+        ]
+    },
+    {
+        "id": "8a7f9da66a8fef97",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Rejected Percent",
+        "func": "/**\n * Node-RED Function: Goal Achievement Percentage Calculation\n * * * Goal: Calculate the percentage of the production goal that has been achieved \n * based on the current parts count.\n * * * Calculation: (Actual Count / Goal Units) * 100\n * * * Inputs:\n * flow.get(\"goalUnits\"): The predefined target number of units to produce (the Goal).\n * msg.payload: The current actual count of units produced.\n * * * Outputs:\n * msg.payload: The Goal Achievement percentage (e.g., 85.5).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total Goal Units (the target count).\nlet goalUnits = flow.get(\"goalUnits\") || 0;\n\n// --- 2. DATA INGESTION ---\n\n// Retrieve the current actual production count from the message payload.\nlet actualCount = msg.payload || 0;\n\n// --- 3. CALCULATION ---\n\nlet achievementPercentage = 0; // Default to 0%\n\n// Safety Check: Avoid division by zero if the goal is 0.\nif (goalUnits > 0) {\n    /**\n     * Calculate the ratio and convert it directly to a percentage.\n     */\n    achievementPercentage = (actualCount / goalUnits) * 100;\n} else {\n    // If the goal is 0 but production happened, we can set it to a very high number\n    // or clip it to 100% (depending on desired dashboard display behavior).\n    // Setting it to 0 is the safest default if the goal is missing.\n    achievementPercentage = 0;\n}\n\n// --- 4. OUTPUT ---\n\n// Set msg.payload to the calculated percentage.\n// Note: Formatting (e.g., toFixed(1)) should ideally be done here if the output needs\n// to be presented as a display value, but the original code lacked it.\n// We return the raw calculation result as per the original logic, assuming downstream nodes handle formatting.\n\n// Replicating original calculation logic:\nmsg.payload = achievementPercentage;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2080,
+        "y": 680,
+        "wires": [
+            [
+                "4c674e62e11778e8"
+            ]
+        ]
+    },
+    {
+        "id": "244bd077a3b31520",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Save Planned Production Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "plannedProductionTimeSec",
+                "pt": "flow",
+                "to": "payload*3600",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 1060,
+        "wires": [
+            [
+                "4a3858d326addc43"
+            ]
+        ]
+    },
+    {
+        "id": "588c355c5eebcb29",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Format data (Production History)",
+        "func": "/**\n * Node-RED Function: OEE Rolling Shift History (Queue)\n * * Logic:\n * - 'Shift end' payload contains the FINAL totals of the closing shift.\n * - We must write this data to the CURRENT slot (Index 2) before rotating.\n * - We only rotate the queue on the NEXT message (Regular) which starts the new shift.\n * \n * * Goal: Visualize production data in a sliding window format.\n * - Right Bar: Current Shift (Real-time updates)\n * - Middle Bar: Previous Shift (Static final values)\n * - Left Bar: 2 Shifts Ago (Static final values)\n * \n */\n\n// --- HELPER FUNCTIONS ---\n\n/**\n * Determines the shift number (1-3) based on the RTC time string.\n * Shift 1: 00:00 - 08:00 | Shift 2: 08:00 - 16:00 | Shift 3: 16:00 - 00:00\n * @param {string} rtc - Time string in \"HH:MM:ss\" format\n * @returns {number} Shift number (1, 2, or 3)\n */\n\nfunction getShiftFromRtc(rtc) {\n    if (!rtc) return 1;\n    const hour = parseInt(rtc.split(':')[0], 10);\n    if (hour >= 0 && hour < 8) return 1;\n    if (hour >= 8 && hour < 16) return 2;\n    return 3;\n}\n\n// --- 1. DATA INGESTION ---\n\nconst reportType = msg.report_type || \"Regular\";\nconst rtc = msg.rtc || \"00:00:00\";\n\n// Current cumulative values from the sensor\nconst currentGoodCount = flow.get('goodProduced') || 0;\nconst currentRejectedCount = flow.get('totalRejected') || 0;\n\n// --- 2. CONTEXT RETRIEVAL ---\n\n// Array [ Index 0 (Oldest), Index 1 (Previous), Index 2 (Current) ]\nlet shiftHistory = flow.get(\"shiftRollingHistory\");\n\nif (!shiftHistory) {\n    shiftHistory = [\n        { good: 0, rejected: 0 },\n        { good: 0, rejected: 0 },\n        { good: 0, rejected: 0 }\n    ];\n}\n\nlet lastKnownShift = flow.get(\"lastKnownShift\") || getShiftFromRtc(rtc);\nconst calculatedCurrentShift = getShiftFromRtc(rtc);\n\n\n// --- 3. SHIFT ROTATION LOGIC ---\n\n// We rotate ONLY if:\n// 1. The shift time has actually changed (calculated vs last known)\n// 2. AND the message is NOT 'Shift end'. \n//    (If it is 'Shift end', we must treat it as the final entry of the OLD shift).\n\nif (calculatedCurrentShift !== lastKnownShift && reportType !== 'Shift end') {\n\n    // 1. Remove the oldest shift (Index 0)\n    shiftHistory.shift();\n\n    // 2. Add a new object for the new Shift at the end (Index 2)\n    shiftHistory.push({ good: 0, rejected: 0 });\n}\n\n// --- 4. DATA UPDATE ---\n\n// We always update Index 2 (The \"Live\" slot).\n// - If it was 'Shift end', we just updated the Old Shift one last time (Correct).\n// - If it was 'Regular' (after rotation), we are updating the New Shift starting at 0 (Correct).\n\nconst currentSlotIndex = 2; // Always the last one\n\nshiftHistory[currentSlotIndex].good = currentGoodCount;\nshiftHistory[currentSlotIndex].rejected = currentRejectedCount;\n\n\n// --- 5. PERSISTENCE SAVING ---\n\nflow.set(\"shiftRollingHistory\", shiftHistory);\n\n\nif (reportType !== 'Shift end') {\n    const rtc = msg.rtc || \"00:00:00\";\n    // Calculate the Shift Number for THIS execution\n    const lastKnownTimeShift = getShiftFromRtc(rtc);\n    flow.set(\"lastKnownShift\", lastKnownTimeShift);\n}\n\n// --- 6. DASHBOARD CHART OUTPUT ---\n\nmsg.payload = [\n    // --- 2 SHIFTS AGO (Index 0) ---\n    {\n        \"series\": \"Good Produced\",\n        \"x\": \"2 Shifts Ago\",\n        \"y\": shiftHistory[0].good\n    },\n    {\n        \"series\": \"Rejected\",\n        \"x\": \"2 Shifts Ago\",\n        \"y\": shiftHistory[0].rejected\n    },\n\n    // --- PREVIOUS SHIFT (Index 1) ---\n    {\n        \"series\": \"Good Produced\",\n        \"x\": \"Previous Shift\",\n        \"y\": shiftHistory[1].good\n    },\n    {\n        \"series\": \"Rejected\",\n        \"x\": \"Previous Shift\",\n        \"y\": shiftHistory[1].rejected\n    },\n\n    // --- CURRENT SHIFT (Index 2) ---\n    {\n        \"series\": \"Good Produced\",\n        \"x\": \"Current Shift\",\n        \"y\": shiftHistory[2].good\n    },\n    {\n        \"series\": \"Rejected\",\n        \"x\": \"Current Shift\",\n        \"y\": shiftHistory[2].rejected\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 600,
+        "wires": [
+            [
+                "48f2d5b3e40cb944"
+            ]
+        ]
+    },
+    {
+        "id": "b7c7910db3d97661",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Quality",
+        "func": "/**\n * Node-RED Function: Quality Rate Calculation\n * * * Goal: Calculate the Quality Rate, which is the percentage of good parts \n * produced out of the total parts produced.\n * * * Quality Rate (Q) = (Total Produced - Rejected) / Total Produced\n * * * Inputs:\n * flow.get(\"totalProduced\"): The total number of units produced (Good + Rejected).\n * flow.get(\"totalRejected\"): The total number of units rejected.\n * * * Outputs:\n * msg.payload: Quality rate percentage (0.0 to 100.0).\n * msg.quality: Quality rate ratio (0.0 to 1.0).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total number of parts produced (Good + Rejected).\nlet totalProduced = flow.get(\"totalProduced\") || 0;\n// Retrieve the total number of parts rejected.\nlet rejected = flow.get(\"totalRejected\") || 0;\n\n// --- 2. QUALITY RATIO CALCULATION ---\n\nlet quality = 0; // Default quality rate\n\n// Safety Check: Avoid division by zero if no parts have been produced yet.\nif (totalProduced > 0) {\n    /**\n     * The Quality Ratio is calculated as:\n     * (Total Produced - Total Rejected) / Total Produced \n     * which simplifies to: Good Produced / Total Produced\n     */\n    quality = (totalProduced - rejected) / totalProduced;\n} else {\n    // If Total Produced is 0, the Quality Rate is 100% (or 1.0), \n    // as no parts have failed inspection.\n    quality = 1.0;\n}\n\n// Sanity Check: Quality should never exceed 1.0 (100%)\nif (quality > 1.0) {\n    quality = 1.0;\n}\n// Safety Check: Quality should not be negative (if produced < rejected, which indicates a logic error)\nif (quality < 0) {\n    quality = 0;\n}\n\n\n// --- 3. OUTPUT ---\n\n// Set msg.payload to the Quality percentage (e.g., 99.8%)\n// Retaining toFixed(1) for display formatting.\nmsg.payload = Number(((quality) * 100).toFixed(1));\n\n// Store the raw ratio for potential downstream calculations (e.g., OEE calculation)\nmsg.quality = quality;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2130,
+        "y": 1260,
+        "wires": [
+            [
+                "420cefd10c1ad9fa",
+                "25111f49353a6d36"
+            ]
+        ]
+    },
+    {
+        "id": "8662614b44cd9674",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Uptime Percentage",
+        "func": "/**\n * Node-RED Function: Uptime Percentage Calculation (Relative to Planned Time)\n * * * Goal: Calculate the percentage of time the machine was actually running (Uptime) \n * relative to the total time it was planned to run (Planned Production Time).\n * * * This is essentially the Availability calculation for a specific time period.\n * * * Inputs:\n * flow.get(\"plannedProductionTimeSec\"): The total planned time for the shift (e.g., 8 hours in seconds).\n * msg.uptime: The actual accumulated uptime achieved during the shift (in seconds).\n * * * Outputs:\n * msg.payload: The Uptime Percentage (0 to 100).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total Planned Production Time for the current shift (in seconds).\nlet plannedProductionTime = flow.get(\"plannedProductionTimeSec\") || 0;\n\n// --- 2. DATA INGESTION ---\n\n// Retrieve the actual accumulated Uptime achieved (in seconds).\nlet actualUptime = msg.uptime || 0;\n\n// --- 3. UPTIME PERCENTAGE CALCULATION ---\n\nlet uptimePercentage = 0; // Default to 0%\n\n// Safety Check: Avoid division by zero if the planned time is 0 (e.g., misconfigured).\nif (plannedProductionTime > 0) {\n    /**\n     * Uptime Percentage = (Actual Uptime / Planned Production Time) * 100\n     */\n    let uptimeRatio = actualUptime / plannedProductionTime;\n\n    // Safety Check: Uptime cannot exceed 100% of planned time.\n    if (uptimeRatio > 1.0) {\n        uptimeRatio = 1.0;\n    }\n\n    // Convert ratio to percentage and round to the nearest whole number (toFixed(0)).\n    uptimePercentage = Number((uptimeRatio * 100).toFixed(0));\n}\n\n// --- 4. OUTPUT ---\n\n// Set msg.payload to the calculated Uptime Percentage (e.g., 98)\nmsg.payload = uptimePercentage;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2040,
+        "y": 120,
+        "wires": [
+            [
+                "c09bc55d9e1367eb"
+            ]
+        ]
+    },
+    {
+        "id": "dba82613aea25d91",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Downtime Percentage",
+        "func": "/**\n * Node-RED Function: Downtime Percentage Calculation (Relative to Planned Time)\n * * * Goal: Calculate the percentage of time the machine was stopped (Downtime) \n * relative to the total time it was planned to run (Planned Production Time).\n * * * This is the inverse of the Uptime Percentage relative to the planned time.\n * * * Inputs:\n * flow.get(\"plannedProductionTimeSec\"): The total planned time for the shift (e.g., 8 hours in seconds).\n * msg.downtime: The actual accumulated downtime accrued during the shift (in seconds).\n * * * Outputs:\n * msg.payload: The Downtime Percentage (0 to 100).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total Planned Production Time for the current shift (in seconds).\nlet plannedProductionTime = flow.get(\"plannedProductionTimeSec\") || 0;\n\n// --- 2. DATA INGESTION ---\n\n// Retrieve the actual accumulated Downtime accrued (in seconds).\nlet actualDowntime = msg.downtime || 0;\n\n// --- 3. DOWNTIME PERCENTAGE CALCULATION ---\n\nlet downtimePercentage = 0; // Default to 0%\n\n// Safety Check: Avoid division by zero if the planned time is 0 (e.g., misconfigured).\nif (plannedProductionTime > 0) {\n    /**\n     * Downtime Percentage = (Actual Downtime / Planned Production Time) * 100\n     */\n    let downtimeRatio = actualDowntime / plannedProductionTime;\n\n    // Safety Check: Downtime cannot exceed 100% of planned time.\n    if (downtimeRatio > 1.0) {\n        downtimeRatio = 1.0;\n    }\n\n    // Convert ratio to percentage and round to the nearest whole number (toFixed(0)).\n    downtimePercentage = Number((downtimeRatio * 100).toFixed(0));\n}\n\n// --- 4. OUTPUT ---\n\n// Set msg.payload to the calculated Downtime Percentage (e.g., 2)\nmsg.payload = downtimePercentage;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2050,
+        "y": 180,
+        "wires": [
+            [
+                "db23ce697f694fde"
+            ]
+        ]
+    },
+    {
+        "id": "115e7bb35e104c8f",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "format Uptime/Downtime",
+        "func": "/**\n * Node-RED Function: Uptime/Downtime Rolling Shift History\n * * Goal: Visualize Uptime/Downtime in a sliding window (queue) format.\n * - Right Bar: Current Shift (Real-time updates)\n * - Middle Bar: Previous Shift (Final values)\n * - Left Bar: 2 Shifts Ago (Final values)\n */\n\n// --- HELPER FUNCTIONS ---\n\n/**\n * Determines the shift number (1-3) based on the RTC time string.\n * Shift 1: 00:00 - 08:00 | Shift 2: 08:00 - 16:00 | Shift 3: 16:00 - 00:00\n * @param {string} rtc - Time string in \"HH:MM:ss\" format\n * @returns {number} Shift number (1, 2, or 3)\n */\nfunction getShiftFromRtc(rtc) {\n    if (!rtc) return 1;\n    const cleanRtc = rtc.trim();\n    const hour = parseInt(cleanRtc.split(':')[0], 10);\n\n    if (hour >= 0 && hour < 8) return 1;\n    if (hour >= 8 && hour < 16) return 2;\n    return 3;\n}\n\n// --- 1. DATA INGESTION ---\n\nconst reportType = msg.report_type || \"Regular\";\nconst rtc = msg.rtc || \"00:00:00\";\n\n// Incoming cumulative totals in Seconds (from previous nodes)\nconst currentTotalUptime = Number(msg.uptime) || 0;\nconst currentTotalDowntime = Number(msg.downtime) || 0;\n\n// --- 2. CONTEXT RETRIEVAL (PERSISTENCE) ---\n\n// We store the history as an Array of 3 objects (Uptime/Downtime in seconds).\n// Index 0: 2 Shifts Ago | Index 1: Previous Shift | Index 2: Current Shift\nlet shiftRollingTimeHistory = flow.get(\"shiftRollingTimeHistory\");\n\n// Initialize structure if it doesn't exist (First run)\nif (!shiftRollingTimeHistory) {\n    shiftRollingTimeHistory = [\n        { uptime: 0, downtime: 0 },\n        { uptime: 0, downtime: 0 },\n        { uptime: 0, downtime: 0 }\n    ];\n}\n\n// Retrieve the Shift Number stored during the LAST execution\nlet lastKnownTimeShift = flow.get(\"lastKnownTimeShift\") || getShiftFromRtc(rtc);\n\n// Retrieve last known total sensor values (for delta calculation)\nlet lastTotalUptime = flow.get(\"lastTotalUptimeSec\");\nlet lastTotalDowntime = flow.get(\"lastTotalDowntimeSec\");\n\n// Calculate the Shift Number for THIS execution\nconst calculatedCurrentShift = getShiftFromRtc(rtc);\n\n\n// --- 3. DELTA CALCULATION (Seconds) ---\n\nlet deltaUptime = 0;\nlet deltaDowntime = 0;\n\n// Calculate Uptime Delta\nif (lastTotalUptime !== undefined) {\n    if (currentTotalUptime >= lastTotalUptime) {\n        deltaUptime = currentTotalUptime - lastTotalUptime;\n    } else {\n        // Sensor reset occurred: take current value as the new delta\n        deltaUptime = currentTotalUptime;\n    }\n} else {\n    // First message: take current value to populate the chart immediately\n    deltaUptime = currentTotalUptime;\n}\n\n// Calculate Downtime Delta (Correction applied: using currentTotalDowntime)\nif (lastTotalDowntime !== undefined) {\n    if (currentTotalDowntime >= lastTotalDowntime) {\n        deltaDowntime = currentTotalDowntime - lastTotalDowntime;\n    } else {\n        // Sensor reset occurred\n        deltaDowntime = currentTotalDowntime;\n    }\n} else {\n    // First message: take current value\n    deltaDowntime = currentTotalDowntime;\n}\n\n\n// --- 4. SHIFT ROTATION LOGIC ---\n\n// We rotate ONLY if the shift time has changed AND the message is NOT 'Shift end'.\nif (calculatedCurrentShift !== lastKnownTimeShift && reportType !== 'Shift end') {\n\n    // 1. Remove the oldest shift (Index 0)\n    shiftRollingTimeHistory.shift();\n\n    // 2. Add a new object for the new \"Current Shift\" at the end (Index 2)\n    shiftRollingTimeHistory.push({ uptime: 0, downtime: 0 });\n}\n\n\n// --- 5. DATA ACCUMULATION & UPDATE ---\n\n// We always update the LAST element (Index 2) by ACCUMULATING the calculated delta.\nconst currentSlotIndex = 2; // Always the last one\n\n// Note: If the sensor resets its absolute counter (0), the delta logic handles it.\n// If the delta is 0, nothing is added. If the delta is positive, it's added.\n\n// If it's the first execution, we overwrite the initial {0,0} with the full value, \n// otherwise we just add the delta.\nif (lastTotalUptime === undefined) {\n    // Overwrite the initial 0s with the first seen value\n    shiftRollingTimeHistory[currentSlotIndex].uptime = currentTotalUptime;\n    shiftRollingTimeHistory[currentSlotIndex].downtime = currentTotalDowntime;\n} else if (reportType === 'Shift end') {\n    // For 'Shift end', we add the final delta to the current slot (Index 2)\n    shiftRollingTimeHistory[currentSlotIndex].uptime += deltaUptime;\n    shiftRollingTimeHistory[currentSlotIndex].downtime += deltaDowntime;\n} else {\n    // For 'Regular' messages, we add the delta\n    shiftRollingTimeHistory[currentSlotIndex].uptime += deltaUptime;\n    shiftRollingTimeHistory[currentSlotIndex].downtime += deltaDowntime;\n}\n\n\n// --- 6. PERSISTENCE SAVING ---\n\n// Save the latest state for the next delta calculation\nflow.set(\"lastTotalUptimeSec\", currentTotalUptime);\nflow.set(\"lastTotalDowntimeSec\", currentTotalDowntime);\n\n// Save the rolling history array\nflow.set(\"shiftRollingTimeHistory\", shiftRollingTimeHistory);\n\nif (reportType !== 'Shift end') {\n    const rtc = msg.rtc || \"00:00:00\";\n    // Calculate the Shift Number for THIS execution\n    const lastKnownTimeShift = getShiftFromRtc(rtc);\n    flow.set(\"lastKnownTimeShift\", lastKnownTimeShift);\n}\n\n// --- 7. DASHBOARD OUTPUT FORMATTING ---\n\n// Convert SECONDS to MINUTES and ensure numerical output for the chart (toFixed(2)).\n\nmsg.payload = [\n    // --- COLUMN 1: 2 SHIFTS AGO (Index 0) ---\n    {\n        \"series\": \"Uptime\",\n        \"x\": \"2 Shifts Ago\",\n        \"y\": Number((shiftRollingTimeHistory[0].uptime / 60).toFixed(2))\n    },\n    {\n        \"series\": \"Downtime\",\n        \"x\": \"2 Shifts Ago\",\n        \"y\": Number((shiftRollingTimeHistory[0].downtime / 60).toFixed(2))\n    },\n\n    // --- COLUMN 2: PREVIOUS SHIFT (Index 1) ---\n    {\n        \"series\": \"Uptime\",\n        \"x\": \"Previous Shift\",\n        \"y\": Number((shiftRollingTimeHistory[1].uptime / 60).toFixed(2))\n    },\n    {\n        \"series\": \"Downtime\",\n        \"x\": \"Previous Shift\",\n        \"y\": Number((shiftRollingTimeHistory[1].downtime / 60).toFixed(2))\n    },\n\n    // --- COLUMN 3: CURRENT SHIFT (Index 2) ---\n    {\n        \"series\": \"Uptime\",\n        \"x\": \"Current Shift\",\n        \"y\": Number((shiftRollingTimeHistory[2].uptime / 60).toFixed(2))\n    },\n    {\n        \"series\": \"Downtime\",\n        \"x\": \"Current Shift\",\n        \"y\": Number((shiftRollingTimeHistory[2].downtime / 60).toFixed(2))\n    }\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 260,
+        "wires": [
+            [
+                "180421fbe1800e3a"
+            ]
+        ]
+    },
+    {
+        "id": "a4a032063137a418",
+        "type": "ui-text",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "Good Produced",
+        "label": "Good Produced:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload&' units'",
+        "valueType": "jsonata",
+        "x": 2480,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "1385d56d8987d8c3",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Produced Percent",
+        "func": "/**\n * Node-RED Function: Goal Achievement Percentage Calculation\n * * * Goal: Calculate the percentage of the production goal that has been achieved \n * based on the current parts count.\n * * * Calculation: (Actual Count / Goal Units) * 100\n * * * Inputs:\n * flow.get(\"goalUnits\"): The predefined target number of units to produce (the Goal).\n * msg.payload: The current actual count of units produced.\n * * * Outputs:\n * msg.payload: The Goal Achievement percentage (e.g., 85.5).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total Goal Units (the target count).\nlet goalUnits = flow.get(\"goalUnits\") || 0;\n\n// --- 2. DATA INGESTION ---\n\n// Retrieve the current actual production count from the message payload.\nlet actualCount = msg.payload || 0;\n\n// --- 3. CALCULATION ---\n\nlet achievementPercentage = 0; // Default to 0%\n\n// Safety Check: Avoid division by zero if the goal is 0.\nif (goalUnits > 0) {\n    /**\n     * Calculate the ratio and convert it directly to a percentage.\n     */\n    achievementPercentage = (actualCount / goalUnits) * 100;\n} else {\n    // If the goal is 0 but production happened, we set the result to 0 \n    // to be safe, assuming a missing goal means we can't measure achievement.\n    achievementPercentage = 0;\n}\n\n// --- 4. OUTPUT ---\n\n// Set msg.payload to the calculated percentage.\n// The output replicates the original calculation logic, returning the raw result.\nmsg.payload = achievementPercentage;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2080,
+        "y": 800,
+        "wires": [
+            [
+                "214989f328aec042"
+            ]
+        ]
+    },
+    {
+        "id": "214989f328aec042",
+        "type": "ui-progress",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "name": "",
+        "label": "Goal Progress",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "color": "",
+        "className": "",
+        "x": 2480,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1d07c5bc862db02f",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Total Good Produced",
+        "func": "/**\n * Node-RED Function: Calculate and Store Good Produced Count\n * * * Goal: Determine the net quantity of good parts produced by subtracting \n * rejected parts from the total production count.\n * * * Inputs:\n * flow.get('totalRejected'): Total number of units rejected.\n * flow.get('totalProduced'): Total number of units produced (Good + Rejected).\n * * * Outputs:\n * msg.payload: The calculated number of good parts produced.\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total number of parts rejected.\nlet actualRejected = flow.get('totalRejected') || 0;\n// Retrieve the total number of parts produced (Good + Rejected).\nlet actualProduced = flow.get('totalProduced') || 0;\n\n// --- 2. CALCULATION ---\n\n// Calculate the number of good parts: Total Produced - Total Rejected.\nlet actualGoodProduced = actualProduced - actualRejected;\n\n// Safety Check: Ensure the good count is not negative (in case of logic errors).\nif (actualGoodProduced < 0) {\n    actualGoodProduced = 0;\n}\n\n// --- 3. STATE SAVING AND OUTPUT ---\n\n// Store the calculated value back into the flow context for use by other nodes \n// (e.g., Quality calculation, Production Charts).\nflow.set('goodProduced', actualGoodProduced);\n\n// Set msg.payload to the calculated number of good parts produced.\nmsg.payload = actualGoodProduced;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 840,
+        "wires": [
+            [
+                "a4a032063137a418",
+                "1385d56d8987d8c3"
+            ]
+        ]
+    },
+    {
+        "id": "bb8d0b2e81b84392",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Availability",
+        "func": "/**\n * Node-RED Function: Availability Percentage Calculation\n * * * Goal: Calculate the current machine availability percentage based on accumulated \n * uptime relative to the theoretical planned time elapsed in the current hour/shift.\n * * * Note: This calculation assumes the \"planned time\" starts at 00:00 and accumulates\n * minute by minute throughout the day, restarting the clock for each 8-hour shift.\n * The use of 'currentHour' for planned time assumes continuous operation from 00:00 to the current hour.\n * * * Inputs:\n * flow.get(\"lastTotalUptimeSec\"): Total accumulated uptime in seconds for the current shift.\n * msg.payload.sensor_data.rtc: Current RTC time string (\"HH:MM:SS\").\n * * * Outputs:\n * msg.payload: Availability percentage (0.0 to 100.0).\n * msg.availability: Availability ratio (0.0 to 1.0).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the total accumulated uptime for the current tracking period (in seconds).\nlet uptime = flow.get(\"lastTotalUptimeSec\") || 0;\n\n// --- 2. DATA INGESTION & PROCESSING ---\n\n// Get the RTC string (e.g., \"17:18:03\")\nconst rtc = msg.rtc || \"00:00:00\";\n// Extract the current hour (e.g., \"17\")\nconst currentHour = rtc.substring(0, 2);\n\n// --- 3. PLANNED TIME CALCULATION ---\n\n/**\n * Calculate the theoretical Planned Time Elapsed (TPE) since the tracking started.\n * The logic assumes TPE is simply the current hour * 60 minutes.\n * This is a simplification that works if the planned period always starts at 00:00.\n * Calculation: Current Hour * 60 minutes * 60 seconds/minute = Total Planned Seconds\n */\nconst plannedHours = Number(currentHour);\n\n// If uptime is in seconds, planned time must also be in seconds:\nlet currentUptimePlannedSec = plannedHours * 3600; // Total planned seconds since midnight\n\n// SAFETY CHECK: Ensure planned time isn't zero to avoid division by zero.\nif (currentUptimePlannedSec === 0) {\n    currentUptimePlannedSec = 1; // Set to 1 second minimum if hour is 0\n}\n\n// --- 4. AVAILABILITY RATIO CALCULATION ---\n\n/**\n * Availability Ratio (A):\n * A = Actual Operating Time / Planned Operating Time\n */\nlet availability = uptime / currentUptimePlannedSec;\n\n// Sanity Check: Availability cannot exceed 1.0 (100%)\nif (availability > 1.0) {\n    availability = 1.0;\n}\n\n// --- 5. OUTPUT ---\n\n// Set msg.payload to the Availability percentage (e.g., 98.5%)\n// Retaining toFixed(1) for display formatting.\nmsg.payload = Number(((availability) * 100).toFixed(1));\n\n// Store the raw ratio for downstream calculations\nmsg.availability = availability;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2140,
+        "y": 1140,
+        "wires": [
+            [
+                "b92d05acd6af0a81",
+                "61d9b6a690757853"
+            ]
+        ]
+    },
+    {
+        "id": "61d9b6a690757853",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Performance",
+        "func": "/**\n * Node-RED Function: Performance Efficiency Calculation\n * * * Goal: Calculate the machine's Performance Efficiency. This ratio compares \n * the actual production rate (Actual Count) against the rate the machine should \n * have achieved (Target Count) during the time it was running (Uptime).\n * * * Inputs:\n * flow.get(\"lastTotalUptimeSec\"): Total accumulated time the machine was running (Uptime, in seconds).\n * flow.get(\"idealCycleTimeSec\"): Time required to produce one unit (Ideal Cycle Time, in seconds).\n * flow.get(\"totalProduced\"): Actual total parts produced in the current period.\n * * * Outputs:\n * msg.payload: Performance efficiency percentage (0.0 to 100.0).\n * msg.performance: Performance efficiency ratio (0.0 to 1.0).\n */\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve accumulated Uptime (seconds). Represents the time available for production.\nlet uptime = flow.get(\"lastTotalUptimeSec\") || 0;\n// Retrieve the Ideal Cycle Time (seconds/unit).\nlet idealCycleTime = flow.get(\"idealCycleTimeSec\") || 0;\n// Retrieve the Actual Produced Count (units).\nlet produced = flow.get(\"totalProduced\") || 0;\n\n// --- 2. TARGET COUNT CALCULATION ---\n\n/**\n * Theoretical Target Count: The maximum number of parts the machine *should* have \n * produced during its Uptime, assuming it ran at the ideal speed.\n * Target Count = Uptime / Ideal Cycle Time\n */\nlet targetCount = 0;\n\nif (idealCycleTime > 0) {\n    targetCount = uptime / idealCycleTime;\n} else {\n    // Safety check: If Ideal Cycle Time is 0, Target Count is undefined/infinity.\n    // Set Target Count to 1 to prevent division by zero in the next step, \n    // or set it to 0 if Uptime is 0, although Target Count should only be > 0 if Uptime > 0.\n    targetCount = (uptime > 0) ? 1 : 0;\n}\n\n\n// --- 3. PERFORMANCE RATIO CALCULATION ---\n\n/**\n * Performance Ratio (P):\n * P = Actual Produced Count / Theoretical Target Count\n * If targetCount is 0 (meaning no uptime), performance is defined as 1 (or 0 if produced is 0).\n */\nlet performance = 0;\n\nif (targetCount > 0) {\n    performance = produced / targetCount;\n} else if (produced > 0) {\n    // Edge case: Produced > 0 but targetCount is 0 (i.e., Uptime was near zero). \n    // This often indicates misconfiguration or a very brief production burst.\n    // We treat this as 100% or clip to 1.0 for calculation safety.\n    performance = 1.0;\n} else {\n    // Uptime=0, Produced=0. Performance is 100% (not penalized for standing still).\n    performance = 1.0;\n}\n\n// Sanity Check: Performance cannot exceed 1.0 (100%)\nif (performance > 1.0) {\n    performance = 1.0;\n}\n\n\n// --- 4. OUTPUT ---\n\n// Set msg.payload to the Performance percentage (e.g., 95.7%)\n// Retaining toFixed(1) for display formatting.\nmsg.payload = Number(((performance) * 100).toFixed(1));\n\n// Store the raw ratio for downstream calculations\nmsg.performance = performance;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2140,
+        "y": 1200,
+        "wires": [
+            [
+                "e3e5e4a8a006cb4e",
+                "b7c7910db3d97661"
+            ]
+        ]
+    },
+    {
+        "id": "b750cf031f2cb9f8",
+        "type": "ui-number-input",
+        "z": "0fd0a1fc520e9c06",
+        "group": "388f1dd2ecccb773",
+        "name": "Ideal Cycle Time (in Seconds)",
+        "label": "Ideal Cycle Time (Seconds)",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "10000",
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": true,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 890,
+        "y": 1020,
+        "wires": [
+            [
+                "de515184abe199ba"
+            ]
+        ]
+    },
+    {
+        "id": "e16713d5dcf9b4cb",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Save Ideal Cycle Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "idealCycleTimeSec",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 1020,
+        "wires": [
+            [
+                "4a3858d326addc43"
+            ]
+        ]
+    },
+    {
+        "id": "5b846dd525ab9e66",
+        "type": "ui-table",
+        "z": "0fd0a1fc520e9c06",
+        "group": "a3f74eaea768bca5",
+        "name": "Downtime Events",
+        "label": "Downtime Events",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "maxrows": "6",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": false,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 2470,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a3858d326addc43",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Units Planned ",
+        "func": "/**\n * Node-RED Function: Calculate and Store Theoretical Production Goal\n * * * Goal: Determine the maximum possible number of units (Theoretical Goal) \n * that can be produced during the Planned Production Time, assuming the \n * machine runs at its Ideal Cycle Time.\n * * * Calculation: Goal Units = Planned Production Time (sec) / Ideal Cycle Time (sec/unit)\n * * * Inputs (Retrieved from flow context, with defaults):\n * flow.get(\"plannedProductionTimeSec\"): Total time the machine is scheduled to run (e.g., 28800 seconds = 8 hours).\n * flow.get(\"idealCycleTimeSec\"): Ideal time to produce one unit (e.g., 240 seconds).\n * * * Outputs:\n * flow.set(\"goalUnits\"): Stores the calculated goal count in the flow context.\n * msg: Passes the original message object to the next node.\n */\n\n// --- 1. CONTEXT RETRIEVAL (with Defaults) ---\n\n// Total time scheduled for production (in seconds). Default: 28800 sec (8 hours).\nlet plannedProductionTime = flow.get(\"plannedProductionTimeSec\") || 28800;\n// Time required to produce one unit (in seconds/unit). Default: 240 sec.\nlet idealCycleTime = flow.get(\"idealCycleTimeSec\") || 240;\n\n// --- 2. THEORETICAL GOAL CALCULATION ---\n\nlet calculatedGoal = 0;\n\n// Safety Check: Avoid division by zero if the ideal cycle time is 0.\nif (idealCycleTime > 0) {\n    /**\n     * Calculate the theoretical maximum count achievable.\n     */\n    calculatedGoal = plannedProductionTime / idealCycleTime;\n}\n\n// Round the result to the nearest whole unit (toFixed(0)) and convert back to Number.\n// This sets the final discrete unit count for the shift goal.\nlet plannedGoalUnits = Number(calculatedGoal.toFixed(0));\n\n// --- 3. STATE SAVING  ---\n\n// Store the calculated goal count into the flow context for use by other nodes (e.g., Goal Achievement chart).\nflow.set(\"goalUnits\", plannedGoalUnits);",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "2fa31ec48674128a",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate Stop Time and Duration",
+        "func": "/**\n * Converts total seconds into the HH:MM:ss string format.\n * This function should ideally be defined outside this node or globally in the flow,\n * but is included here for completeness.\n * @param {number} totalSeconds - The total time in seconds.\n * @returns {string} The formatted time string.\n */\nfunction formatSecondsToHms(totalSeconds) {\n    // Ensure input is valid before calculation\n    totalSeconds = Math.max(0, Math.floor(totalSeconds));\n\n    // Helper function to ensure two-digit formatting (e.g., 5 -> 05).\n    const pad = (num) => String(num).padStart(2, '0');\n\n    // Calculate Hours, Minutes, and remaining Seconds\n    const hours = Math.floor(totalSeconds / 3600);\n    const minutes = Math.floor((totalSeconds % 3600) / 60);\n    const seconds = totalSeconds % 60;\n\n    // Create the final HH:MM:ss string\n    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;\n}\n\nlet type = msg.report_type;\n\nif (type === \"Interrupt\") {\n\n    const currentMachineStatus = msg.payload;\n    const rtcStopHumanFormatted = msg.rtc; // \"HH:MM:ss\"\n\n    // Convert RTC \"HH:MM:ss\" string to total seconds elapsed since midnight\n    const parts = rtcStopHumanFormatted.split(\":\");\n    // Use Array destructuring and map to convert parts to numbers\n    const [hours, minutes, seconds] = parts.map(Number);\n    const eventTimeSeconds = (hours * 3600) + (minutes * 60) + seconds; // Current time in seconds\n\n\n    // Get persisted state variables from flow context\n    let lastMachineStatus = flow.get('lastMachineStatus');\n    if (lastMachineStatus == undefined) lastMachineStatus = 1;\n    let stopTimeSeconds = flow.get('stopTimeSeconds'); // Time (in seconds) when machine stopped\n    let rtcStop = flow.get('rtcStop'); // RTC string when machine stopped\n\n    let totalStoppedTime = 0;\n\n    // Check if the machine status has changed\n    if (currentMachineStatus != lastMachineStatus) {\n\n        // 1. Status changed to STOPPED (HIGH to LOW: 1 -> 0)\n        if (currentMachineStatus == 0) {\n            flow.set('rtcStop', rtcStopHumanFormatted); // Save current RTC string\n            flow.set('stopTimeSeconds', eventTimeSeconds); // Save time in seconds\n            flow.set('lastMachineStatus', currentMachineStatus);\n            // Wait for the next interrupt (start-up)\n        }\n\n        // 2. Status changed to RUNNING (LOW to HIGH: 0 -> 1)\n        else {\n\n            // a) Check for midnight crossover (if current event time is BEFORE the stop time)\n            if (eventTimeSeconds < stopTimeSeconds) {\n                // Calculation: (Seconds remaining until midnight) + (Seconds passed since midnight)\n                const secondsUntilMidnight = 86400 - stopTimeSeconds; // 86400 seconds in 24h\n                totalStoppedTime = eventTimeSeconds + secondsUntilMidnight;\n            }\n\n            // b) Standard calculation (within the same day)\n            else {\n                totalStoppedTime = eventTimeSeconds - stopTimeSeconds;\n            }\n\n            // Prepare output message\n            msg.stopRTC = rtcStop; // Time when machine stopped\n            msg.startRTC = rtcStopHumanFormatted;\n            // Convert the total stopped duration (in seconds) to HH:MM:ss format\n            msg.stopTime = formatSecondsToHms(totalStoppedTime);\n\n            // Update machine status for the next event\n            flow.set('lastMachineStatus', currentMachineStatus);\n\n            // Return the structured downtime event message\n            return msg;\n        }\n    }\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 400,
+        "wires": [
+            [
+                "f2d2dc8a7598cfcb"
+            ]
+        ]
+    },
+    {
+        "id": "f2d2dc8a7598cfcb",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Format Downtime",
+        "func": "/**\n * Node-RED Function: Downtime Events Rolling History (FIFO Queue)\n * * * Goal: Maintain a list of the last 6 downtime events (stop time, start time, duration).\n * * Structure: Uses a FIFO queue implemented via a JavaScript Array.\n * * * Inputs:\n * msg.stopRTC: The RTC timestamp when the machine stopped (Start of Downtime).\n * msg.startRTC: The RTC timestamp when the machine started (End of Downtime).\n * msg.stopTime: The calculated duration of the downtime event (e.g., in minutes/seconds).\n * * * Outputs:\n * msg.payload: An array containing the 6 most recent downtime event records.\n */\n\n// --- CONFIGURATION ---\n\nconst MAX_HISTORY_LENGTH = 6; // Defines the maximum number of records to display.\n\n// --- 1. CONTEXT RETRIEVAL ---\n\n// Retrieve the stored history array from the flow context.\n// If it doesn't exist (first run), initialize an array of the required length.\nlet history = flow.get('downtimeHistory');\n\nif (!history) {\n    // Initialize with empty records to ensure the array has the correct size and structure.\n    history = Array(MAX_HISTORY_LENGTH).fill().map(() => ({\n        \"Stop Init Time\": \"-\",\n        \"Stop End Time\": \"-\",\n        \"Duration\": \"-\"\n    }));\n}\n\n// --- 2. CREATE NEW RECORD ---\n\n// Create the new record object using incoming data.\n// Ensure 'msg.stopTime' includes its unit (e.g., \"15 minutes\") if needed for display.\nlet newRecord = {\n    \"Stop Init Time\": msg.stopRTC || \"N/A\",  // Time when the machine stopped\n    \"Stop End Time\": msg.startRTC || \"N/A\",   // Time when the machine resumed\n    \"Duration\": msg.stopTime || \"N/A\"         // Duration of the stop event\n};\n\n// --- 3. FIFO QUEUE LOGIC (Rolling Window) ---\n\n// a. Add the newest record to the beginning of the array (Index 0).\n// This is the \"First In\" step, making the newest record the most visible.\nhistory.unshift(newRecord);\n\n// b. Remove the last element (the oldest record) to maintain the fixed length.\n// This is the \"First Out\" step.\nif (history.length > MAX_HISTORY_LENGTH) {\n    history.pop();\n}\n\n// --- 4. PERSISTENCE AND OUTPUT ---\n\n// Save the updated array back to the flow context for the next event.\nflow.set('downtimeHistory', history);\n\n// Send the updated array to the next node (e.g., a Dashboard 2.0 table widget).\nmsg.payload = history;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2090,
+        "y": 400,
+        "wires": [
+            [
+                "5b846dd525ab9e66"
+            ]
+        ]
+    },
+    {
+        "id": "26b9da12b34ea653",
+        "type": "ncd-gateway-node",
+        "z": "0fd0a1fc520e9c06",
+        "name": "",
+        "connection": "",
+        "unknown_devices": 0,
+        "outputs": 1,
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "fc8efc2d39aa16c5",
+                "7e289fcd1da109fb"
+            ]
+        ]
+    },
+    {
+        "id": "12f135384beb95b2",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Uptime/Downtime Manage",
+        "func": "/**\n * Node-RED Function: Downtime Calculation Engine (Delta Logic)\n * * This function calculates the accumulated Downtime based on the difference\n * between the RTC Elapsed Time and the reported Uptime. It handles shift\n * resets (00:00, 08:00, 16:00) by resetting the 'anchorSeconds' reference point.\n * * Inputs:\n * msg.rtc: The current sensor time string (\"HH:MM:SS\").\n * msg.payload: The current cumulative Uptime reported by the sensor (in seconds).\n * * Outputs:\n * msg.uptime: Passed-through current Uptime.\n * msg.downtime: Calculated cumulative Downtime since the last anchor reset (in seconds).\n */\n\n// --- CONFIGURATION ---\n\n/**\n * Define the official shift start times (used for hard resets).\n * The array structure allows easy iteration for boundary checking.\n */\nconst SHIFT_START_TIMES = [\n    { h: 0, m: 0, s: 0 },\n    { h: 8, m: 0, s: 0 },\n    { h: 16, m: 0, s: 0 }\n];\n\n// --- CONTEXT RETRIEVAL ---\n\n// lastRtcSeconds: RTC time (in seconds) from the previous message. Used to detect boundary crossing.\nlet lastRtcSeconds = flow.get('lastRtcSeconds') || -1;\n// anchorSeconds: The time (in seconds) when the current Uptime tracking started (Shift Start or Flow Deployment).\nlet anchorSeconds = flow.get('anchorSeconds');\n\n// --- HELPER FUNCTION ---\n\n/**\n * Converts an \"HH:MM:SS\" time string into the total seconds elapsed since midnight.\n * @param {string} timeStr - The RTC time string (e.g., \"10:36:12\").\n * @returns {number} Total seconds from 00:00:00.\n */\nfunction timeToSeconds(timeStr) {\n    // Safety check for empty or invalid input\n    if (typeof timeStr !== 'string' || timeStr.length < 8) return 0;\n\n    const parts = timeStr.split(':');\n    return (parseInt(parts[0]) * 3600) + (parseInt(parts[1]) * 60) + parseInt(parts[2]);\n}\n\n// --- 1. CURRENT DATA PROCESSING ---\n\nlet currentRtcStr = msg.rtc;\nlet currentUptime = Number(msg.payload); // Ensure Uptime is treated as a number\nlet currentRtcSeconds = timeToSeconds(currentRtcStr);\n\n// --- 2. INITIALIZATION LOGIC (First Run or Context Wipe) ---\n\n// Case: Flow deployed for the first time, anchor reference is missing.\nif (anchorSeconds === undefined || anchorSeconds === null) {\n    // Establish the anchor at the current RTC time.\n    anchorSeconds = currentRtcSeconds;\n    // Note: If the sensor already reported high uptime (not reset at deployment), \n    // the downtime calculation might be inaccurate until the first shift change.\n    flow.set('anchorSeconds', anchorSeconds);\n\n    // If it's the first run, we cannot calculate downtime yet.\n    if (lastRtcSeconds === -1) {\n        flow.set('lastRtcSeconds', currentRtcSeconds);\n        msg.uptime = currentUptime;\n        msg.downtime = 0;\n        return msg; // Exit early to avoid inaccurate calculation loop\n    }\n}\n\n// --- 3. SHIFT BOUNDARY DETECTION AND ANCHOR RESET ---\n\n// Only run the check if we have a previous reading to compare against.\nif (lastRtcSeconds !== -1) {\n\n    for (const shift of SHIFT_START_TIMES) {\n        let shiftSeconds = (shift.h * 3600) + (shift.m * 60) + shift.s;\n\n        // Check for boundary crossing: If the previous time was BEFORE the shift start,\n        // and the current time is AT or AFTER the shift start.\n        if (lastRtcSeconds < shiftSeconds && currentRtcSeconds >= shiftSeconds) {\n\n            // Shift boundary detected! Reset the anchor to the official shift start time.\n            anchorSeconds = shiftSeconds;\n            flow.set('anchorSeconds', anchorSeconds);\n            // We exit the loop once a boundary is found to prevent multiple resets.\n            break;\n        }\n    }\n\n    // Special Case: Midnight Crossing (23:59:59 -> 00:00:00)\n    // This is handled separately because time does not increase monotonically.\n    if (lastRtcSeconds > currentRtcSeconds) {\n        // Reset anchor to 0 (midnight)\n        anchorSeconds = 0;\n        flow.set('anchorSeconds', anchorSeconds);\n    }\n}\n\n// --- 4. DOWNTIME CALCULATION ---\n\n// Time elapsed since the 'Anchor' (Shift Start or last Reset)\nlet elapsedTime = currentRtcSeconds - anchorSeconds;\n\n// Safety check: Prevents negative elapsed time due to latency/minor desync.\nif (elapsedTime < 0) elapsedTime = 0;\n\n/**\n * Calculated Downtime (in seconds):\n * Downtime = Total Time Passed - Total Time Machine Was Running (Uptime)\n */\nlet calculatedDowntime = elapsedTime - currentUptime;\n\n// Sanity Check: Downtime cannot be less than zero.\n// This can occur if the 'anchorSeconds' was recently set or if currentUptime is unusually high.\nif (calculatedDowntime < 0) calculatedDowntime = 0;\n\n// --- 5. STATE SAVING AND OUTPUT ---\n\n// Save the current RTC seconds for the next boundary check.\nflow.set('lastRtcSeconds', currentRtcSeconds);\n\n// Pass through the calculated values\nmsg.uptime = currentUptime;\nmsg.downtime = calculatedDowntime;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1760,
+        "y": 160,
+        "wires": [
+            [
+                "8662614b44cd9674",
+                "dba82613aea25d91",
+                "115e7bb35e104c8f",
+                "81e02310086896e5"
+            ]
+        ]
+    },
+    {
+        "id": "81e02310086896e5",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "format seconds to HH:MM:ss",
+        "func": "/**\n * Converts total seconds into the HH:MM:ss string format.\n * @param {number} totalSeconds - The total time in seconds.\n * @returns {string | null} The formatted time string or null if the input is invalid.\n */\n\nfunction formatSecondsToHms(totalSeconds) {\n    // Helper function to ensure two-digit formatting (e.g., 5 -> 05).\n    const pad = (num) => String(num).padStart(2, '0');\n\n    // 1. Calculate Hours, Minutes, and remaining Seconds\n    const hours = Math.floor(totalSeconds / 3600);\n    const minutes = Math.floor((totalSeconds % 3600) / 60);\n    const seconds = totalSeconds % 60;\n\n    // 2. Create the final HH:MM:ss string\n    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;\n}\n\nlet msg1 = {};\n\n// Get input values directly from the message object.\n// We expect msg.uptime and msg.downtime to contain the total seconds.\nconst uTotalSeconds = msg.uptime;\nconst dTotalSeconds = msg.downtime;\n\n// Apply the formatting function to both uptime and downtime values.\n// We overwrite the existing msg properties with the new formatted string.\nmsg.payload = formatSecondsToHms(uTotalSeconds);\nmsg1.payload = formatSecondsToHms(dTotalSeconds);\n\nreturn [msg, msg1];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2040,
+        "y": 40,
+        "wires": [
+            [
+                "d0ccc8eec3037192"
+            ],
+            [
+                "4a1928481b263a2d"
+            ]
+        ]
+    },
+    {
+        "id": "ba1da8e3bfc09a19",
+        "type": "ui-template",
+        "z": "0fd0a1fc520e9c06",
+        "group": "",
+        "page": "",
+        "ui": "edb9003a47629078",
+        "name": "DateTime and Style",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <!-- Teleporting user info to #app-bar-actions -->\n    <Teleport v-if=\"loaded\" to=\"#app-bar-actions\">\n        <div class=\"clock-display\">{{ formattedTime }}</div>\n    </Teleport>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            loaded: false,\n            currentTime: new Date(),\n        };\n    },\n    computed: {\n        formattedTime() {\n            return this.formatDate(this.currentTime);\n        }\n    },\n    mounted() {\n        this.loaded = true;\n        this.startClock();\n    },\n    beforeUnmount() {\n        clearInterval(this.clockInterval);\n    },\n    methods: {\n        startClock() {\n            this.clockInterval = setInterval(() => {\n                this.currentTime = new Date();\n            }, 1000);\n        },\n        formatDate(date) {\n            const year = date.getFullYear();\n            const month = String(date.getMonth() + 1).padStart(2, \"0\");\n            const day = String(date.getDate()).padStart(2, \"0\");\n            const hours = String(date.getHours()).padStart(2, \"0\");\n            const minutes = String(date.getMinutes()).padStart(2, \"0\");\n            const seconds = String(date.getSeconds()).padStart(2, \"0\");\n            return `${hours}:${minutes}:${seconds} | ${year}-${month}-${day}`;\n        }\n    }\n};\n</script>\n\n<style>\n    .bg-group-background{\n        border-width: 7.5px !important;\n        border-radius: 15px !important;\n    }\n    .clock-display {\n        margin: 5px 10px;\n        font-size: 24px;\n        font-weight: bold;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "widget:ui",
+        "className": "",
+        "x": 2470,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc8efc2d39aa16c5",
+        "type": "debug",
+        "z": "0fd0a1fc520e9c06",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "970a05bbb8437e04",
+        "type": "ui-button",
+        "z": "0fd0a1fc520e9c06",
+        "group": "74b445a08cecbe9a",
+        "name": "",
+        "label": "Manual Reset",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Are you sure to reset the values?",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1860,
+        "y": 1040,
+        "wires": [
+            [
+                "ab81a0530e4de1e5"
+            ]
+        ]
+    },
+    {
+        "id": "1f96166ee50788a2",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "delete context",
+        "func": "/**\n * Node-RED Function: Global System Reset (Flow Context Cleanup)\n * * * Goal: Clears all operational and historical data stored in the flow context \n * to reset the OEE calculation engine and dashboard state.\n * * Implementation: Iterates through a predefined list of keys and sets their \n * value to 'undefined', effectively removing them from the context.\n * * Outputs:\n * [0]: msg.payload = 0 (Typically used to reset counter displays/gauges).\n * [1]: msg1.payload = [] (Typically used to clear chart or history table widgets).\n */\n\n// --- CONFIGURATION: VARIABLES TO RESET ---\n\n/**\n * List of flow context keys representing operational data, counters, and history \n * that must be cleared to perform a factory reset.\n * NOTE: Configuration keys (e.g., goalUnits, idealCycleTimeSec) are included \n * if they should revert to default/initial values upon system reset.\n */\nconst keysToReset = [\n    // Operational Anchors and Timing\n    'anchorSeconds',              // Start time reference for uptime/downtime calculation\n    'lastRtcSeconds',             // Last known RTC time (for delta/boundary checks)\n    'rtcStop',                    // RTC timestamp when the last stop initiated\n    'stopTimeSeconds',            // Time reference for short stops\n\n    // Cumulative Sensor Totals (Deltas will reset on the next sensor message)\n    'lastTotalDowntimeSec',       // Last total downtime reported\n    'lastTotalUptimeSec',         // Last total uptime reported\n\n    // Counter Totals\n    'goodProduced',               // Total good produced in current shift\n    'totalProduced',              // Total parts produced (total count)\n    'totalRejected',              // Total rejected parts\n\n    // Status Flags\n    'lastMachineStatus',          // Last known machine state (running/stopped)\n    'lastKnownShift',             // Last known shift number (for rotation tracking)\n    'lastKnownTimeShift',         // Last known time shift number (for rotation tracking)\n\n    // Historical Arrays (Rolling Windows)\n    'downtimeHistory',            // Array of the last 6 downtime events\n    'shiftRollingHistory',        // Array for production rolling history (Good/Rejected)\n    'shiftRollingTimeHistory',    // Array for time rolling history (Uptime/Downtime)\n\n    // Configuration/Goal Settings (Included for a full system reset)\n    'goalUnits',                  // Production goal quantity\n    'idealCycleTimeSec',          // Ideal time to produce one unit\n    'plannedProductionTimeSec'    // Total planned time for a shift\n];\n\n// --- LOGIC: CLEAR FLOW CONTEXT ---\n\n// Iterate through the predefined list and set each key to 'undefined'.\n// Setting a key to 'undefined' removes it from the context store, forcing \n// subsequent function nodes to re-initialize these variables on their next run.\nkeysToReset.forEach(key => {\n    flow.set(key, undefined);\n});\n\n// --- OUTPUTS ---\n\n// 1. Initialize second message object\nlet msg1 = {};\n\n// 2. Set payload for the first output (e.g., to reset dashboard counters)\nmsg.payload = 0;\n\n// 3. Set payload for the second output (e.g., to clear history tables or charts)\nmsg1.payload = [];\n\n// Node-RED allows returning an array of messages for multiple outputs.\nreturn [msg, msg1];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2400,
+        "y": 1040,
+        "wires": [
+            [
+                "90471be906aac990"
+            ],
+            [
+                "9c0a1e15cb167c7e"
+            ]
+        ]
+    },
+    {
+        "id": "ab81a0530e4de1e5",
+        "type": "ui-notification",
+        "z": "0fd0a1fc520e9c06",
+        "ui": "edb9003a47629078",
+        "position": "center center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Cancel",
+        "allowConfirm": true,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "pop-up confirmation",
+        "x": 2060,
+        "y": 1040,
+        "wires": [
+            [
+                "607ca9f0a01b49db"
+            ]
+        ]
+    },
+    {
+        "id": "607ca9f0a01b49db",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "name": "confirm",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "confirm_clicked",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2240,
+        "y": 1040,
+        "wires": [
+            [
+                "1f96166ee50788a2"
+            ]
+        ]
+    },
+    {
+        "id": "2eb4820ec061e3aa",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fdde70091d646017",
+        "name": "Set Production Counter Input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sensor_data.opto_input_counter",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 580,
+        "wires": [
+            [
+                "16f8a6a21be8a5b1",
+                "7c8f3f562b0bba6b"
+            ]
+        ]
+    },
+    {
+        "id": "cae684c1bfb4bf20",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fdde70091d646017",
+        "name": "Set Rejected Counter Input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sensor_data.digital_input_counter",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 720,
+        "wires": [
+            [
+                "89e02119d78e142d",
+                "7c8f3f562b0bba6b"
+            ]
+        ]
+    },
+    {
+        "id": "7e289fcd1da109fb",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Filter Sensor Data Only",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "sensor_data",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 580,
+        "wires": [
+            [
+                "cc82c855c4f6d853",
+                "7e9a3dfbc9cb24fd",
+                "b3e09912c8798e98"
+            ]
+        ]
+    },
+    {
+        "id": "cc82c855c4f6d853",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fddd1ad6a2794ee4",
+        "name": "Set Device: Production Count",
+        "property": "payload.addr",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "00:13:a2:00:41:ba:9f:32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 580,
+        "wires": [
+            [
+                "fc924b13a60ccea8"
+            ]
+        ]
+    },
+    {
+        "id": "7e9a3dfbc9cb24fd",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fddd1ad6a2794ee4",
+        "name": "Set Device: Rejected Count",
+        "property": "payload.addr",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "00:13:a2:00:41:ba:9f:32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 720,
+        "wires": [
+            [
+                "cae684c1bfb4bf20"
+            ]
+        ]
+    },
+    {
+        "id": "fc924b13a60ccea8",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Extract: RTC & Report Type",
+        "rules": [
+            {
+                "t": "set",
+                "p": "report_type",
+                "pt": "msg",
+                "to": "payload.sensor_data.report_type",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "rtc",
+                "pt": "msg",
+                "to": "payload.sensor_data.rtc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 580,
+        "wires": [
+            [
+                "2eb4820ec061e3aa"
+            ]
+        ]
+    },
+    {
+        "id": "4983c6b88b823135",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fdde70091d646017",
+        "name": "Set Status Input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sensor_data.input_ct",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 440,
+        "wires": [
+            [
+                "5928ed951a57b084",
+                "2fa31ec48674128a",
+                "34849cd9d26125e9"
+            ]
+        ]
+    },
+    {
+        "id": "b3e09912c8798e98",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fddd1ad6a2794ee4",
+        "name": "Set Device: Machine Status",
+        "property": "payload.addr",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "00:13:a2:00:41:ba:9f:32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 440,
+        "wires": [
+            [
+                "09c53df64ff62939"
+            ]
+        ]
+    },
+    {
+        "id": "09c53df64ff62939",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Extract: RTC & Report Type",
+        "rules": [
+            {
+                "t": "set",
+                "p": "report_type",
+                "pt": "msg",
+                "to": "payload.sensor_data.report_type",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "rtc",
+                "pt": "msg",
+                "to": "payload.sensor_data.rtc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 440,
+        "wires": [
+            [
+                "4983c6b88b823135",
+                "549b5e3433be4368"
+            ]
+        ]
+    },
+    {
+        "id": "549b5e3433be4368",
+        "type": "change",
+        "z": "0fd0a1fc520e9c06",
+        "g": "fdde70091d646017",
+        "name": "Set Uptime Input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sensor_data.ct_input_uptime",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 300,
+        "wires": [
+            [
+                "12f135384beb95b2",
+                "34849cd9d26125e9"
+            ]
+        ]
+    },
+    {
+        "id": "90471be906aac990",
+        "type": "link out",
+        "z": "0fd0a1fc520e9c06",
+        "name": "reset numerics",
+        "mode": "link",
+        "links": [
+            "88521189faccd005",
+            "dea52bcef65565b4",
+            "6c7bbc34b694f272",
+            "523c649cc812d0c3",
+            "a027d3516d39a9f0"
+        ],
+        "x": 2545,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9c0a1e15cb167c7e",
+        "type": "link out",
+        "z": "0fd0a1fc520e9c06",
+        "name": "reset charts",
+        "mode": "link",
+        "links": [
+            "ec84539bfbf80a6f",
+            "0f0b42e3534592b2",
+            "f9509274091a0075"
+        ],
+        "x": 2545,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "88521189faccd005",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 3",
+        "links": [
+            "90471be906aac990"
+        ],
+        "x": 2175,
+        "y": 540,
+        "wires": [
+            [
+                "8375df8a0a257122"
+            ]
+        ]
+    },
+    {
+        "id": "dea52bcef65565b4",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 4",
+        "links": [
+            "90471be906aac990"
+        ],
+        "x": 2175,
+        "y": 1360,
+        "wires": [
+            [
+                "b92d05acd6af0a81",
+                "e3e5e4a8a006cb4e",
+                "420cefd10c1ad9fa",
+                "b3f32a55d0732240"
+            ]
+        ]
+    },
+    {
+        "id": "6c7bbc34b694f272",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 2",
+        "links": [
+            "90471be906aac990"
+        ],
+        "x": 2175,
+        "y": 80,
+        "wires": [
+            [
+                "d0ccc8eec3037192",
+                "4a1928481b263a2d"
+            ]
+        ]
+    },
+    {
+        "id": "ec84539bfbf80a6f",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 5",
+        "links": [
+            "9c0a1e15cb167c7e"
+        ],
+        "x": 2175,
+        "y": 300,
+        "wires": [
+            [
+                "180421fbe1800e3a"
+            ]
+        ]
+    },
+    {
+        "id": "523c649cc812d0c3",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 6",
+        "links": [
+            "90471be906aac990"
+        ],
+        "x": 2175,
+        "y": 220,
+        "wires": [
+            [
+                "c09bc55d9e1367eb",
+                "db23ce697f694fde"
+            ]
+        ]
+    },
+    {
+        "id": "0f0b42e3534592b2",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 7",
+        "links": [
+            "9c0a1e15cb167c7e"
+        ],
+        "x": 2175,
+        "y": 360,
+        "wires": [
+            [
+                "5b846dd525ab9e66"
+            ]
+        ]
+    },
+    {
+        "id": "f9509274091a0075",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 8",
+        "links": [
+            "9c0a1e15cb167c7e"
+        ],
+        "x": 2185,
+        "y": 640,
+        "wires": [
+            [
+                "48f2d5b3e40cb944"
+            ]
+        ]
+    },
+    {
+        "id": "a027d3516d39a9f0",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 9",
+        "links": [
+            "90471be906aac990"
+        ],
+        "x": 2185,
+        "y": 760,
+        "wires": [
+            [
+                "4c674e62e11778e8",
+                "daeeba6db02c4d3c",
+                "214989f328aec042",
+                "a4a032063137a418"
+            ]
+        ]
+    },
+    {
+        "id": "25111f49353a6d36",
+        "type": "function",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Calculate OEE",
+        "func": "/**\n * Node-RED Function: Overall Equipment Effectiveness (OEE) Calculation\n * * * Goal: Calculate the final OEE percentage by multiplying the three key OEE factors.\n * * * OEE = Availability * Performance * Quality\n * * * Inputs (Expected to be ratios from 0.0 to 1.0):\n * msg.availability: The Availability ratio.\n * msg.performance: The Performance ratio.\n * msg.quality: The Quality ratio.\n * * * Outputs:\n * msg.payload: The final OEE value as a percentage (0.0 to 100.0).\n */\n\n// --- 1. DATA INGESTION ---\n\n// Retrieve the calculated ratios from the incoming message object.\n// We assume these ratios (0.0 to 1.0) were calculated by upstream nodes.\nlet availability = msg.availability || 0;\nlet performance = msg.performance || 0;\nlet quality = msg.quality || 0; // Corrected spelling for clarity and consistency\n\n// --- 2. OEE CALCULATION ---\n\n/**\n * The core OEE equation. The result is a ratio from 0.0 to 1.0.\n * OEE = Availability Ratio * Performance Ratio * Quality Ratio\n */\nlet oee_ratio = availability * performance * quality;\n\n// Convert the ratio (0.0 - 1.0) to a percentage (0.0 - 100.0) and format it.\nlet oee_percentage = Number((oee_ratio * 100).toFixed(1));\n\n// --- 3. OUTPUT ---\n\n// Set msg.payload to the final OEE percentage (e.g., 85.5%)\nmsg.payload = oee_percentage;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2120,
+        "y": 1320,
+        "wires": [
+            [
+                "b3f32a55d0732240"
+            ]
+        ]
+    },
+    {
+        "id": "0f32b4ff171a2962",
+        "type": "link in",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link in 1",
+        "links": [
+            "7c8f3f562b0bba6b",
+            "34849cd9d26125e9"
+        ],
+        "x": 1865,
+        "y": 1140,
+        "wires": [
+            [
+                "ccc01c45582af30d"
+            ]
+        ]
+    },
+    {
+        "id": "7c8f3f562b0bba6b",
+        "type": "link out",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "0f32b4ff171a2962"
+        ],
+        "x": 1655,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "34849cd9d26125e9",
+        "type": "link out",
+        "z": "0fd0a1fc520e9c06",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "0f32b4ff171a2962"
+        ],
+        "x": 1655,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ccc01c45582af30d",
+        "type": "delay",
+        "z": "0fd0a1fc520e9c06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1960,
+        "y": 1140,
+        "wires": [
+            [
+                "bb8d0b2e81b84392"
+            ]
+        ]
+    },
+    {
+        "id": "1d46255c80b4b0db",
+        "type": "comment",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Step 1) Set Serial Device",
+        "info": "\n",
+        "x": 170,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e4923a24aa6c32fc",
+        "type": "comment",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Step 2) Set Sensor Address",
+        "info": "\n",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4abf9d96704e3c55",
+        "type": "comment",
+        "z": "0fd0a1fc520e9c06",
+        "name": "Step 3) Set Sensor Data Path",
+        "info": "\n",
+        "x": 1380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "de515184abe199ba",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "name": "is not null",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1120,
+        "y": 1020,
+        "wires": [
+            [
+                "e16713d5dcf9b4cb"
+            ]
+        ]
+    },
+    {
+        "id": "fd600309367c5176",
+        "type": "switch",
+        "z": "0fd0a1fc520e9c06",
+        "name": "is not null",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1120,
+        "y": 1060,
+        "wires": [
+            [
+                "244bd077a3b31520"
+            ]
+        ]
+    },
+    {
+        "id": "f2728a391265744b",
+        "type": "ui-group",
+        "name": "OEE",
+        "page": "185c51b32b9722f9",
+        "width": "2",
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "groups",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "bf5401c82d42a5ab",
+        "type": "ui-group",
+        "name": "Performance",
+        "page": "185c51b32b9722f9",
+        "width": "2",
+        "height": 1,
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e66cf767338f92c3",
+        "type": "ui-group",
+        "name": "Availability",
+        "page": "185c51b32b9722f9",
+        "width": "2",
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "groups",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "bb7991b86627822f",
+        "type": "ui-group",
+        "name": "Quality",
+        "page": "185c51b32b9722f9",
+        "width": "2",
+        "height": 1,
+        "order": 5,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "388f1dd2ecccb773",
+        "type": "ui-group",
+        "name": "Production Data",
+        "page": "185c51b32b9722f9",
+        "width": "5",
+        "height": 1,
+        "order": 6,
+        "showTitle": false,
+        "className": "groups",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "114d4f73be244ba3",
+        "type": "ui-group",
+        "name": "Uptime Data",
+        "page": "185c51b32b9722f9",
+        "width": "5",
+        "height": 1,
+        "order": 7,
+        "showTitle": false,
+        "className": "groups",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "74b445a08cecbe9a",
+        "type": "ui-group",
+        "name": "Machine Status",
+        "page": "185c51b32b9722f9",
+        "width": "2",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "groups",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a3f74eaea768bca5",
+        "type": "ui-group",
+        "name": "Downtime Events",
+        "page": "185c51b32b9722f9",
+        "width": "10",
+        "height": 1,
+        "order": 8,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "edb9003a47629078",
+        "type": "ui-base",
+        "name": "UI Name",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "185c51b32b9722f9",
+        "type": "ui-page",
+        "name": "National Control Devices (OEE Dashboard Template)",
+        "ui": "edb9003a47629078",
+        "path": "/ncd_oee_template",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "e0d7677cf4c2fb1a",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e0d7677cf4c2fb1a",
+        "type": "ui-theme",
+        "name": "ncd_oee_theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "f833954d8c3ec75f",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.29.0",
+            "@ncd-io/node-red-enterprise-sensors": "1.5.8"
+        }
+    }
+]
